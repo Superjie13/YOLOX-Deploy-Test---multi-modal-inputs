@@ -34,3 +34,8 @@ Specifically, we provide scripts to load the YOLOX model from the onnx file and 
    # run yolox_raw.onnx model on onnxruntime
    python on_ort_raw.py <path_to_onnx_model> data/rgb_00000.png data/siap_00000.png --show 
    ``` 
+   
+### Results:
+<p align="center">
+    <img src="data/result.png" width="90%">
+</p>
