@@ -12,11 +12,17 @@ Specifically, we provide scripts to load the YOLOX model from the onnx file and 
 ### Usage:
 1. Download the onnx model file:
    1. [end2end.onnx](https://drive.google.com/file/d/1bckuHYDEx0CnIYENlCmaKs-vZ1x3UF98/view?usp=sharing): Exported 
-   pre-trained multi-modal YOLOX model that runs end-to-end (model forward pass + post-processing + NMS). 
+      pre-trained multi-modal YOLOX model that runs end-to-end (model forward pass + post-processing + NMS). 
    2. [yolox.onnx](https://drive.google.com/file/d/1Q7cL7BbDfZ7qzfQf1FcpPGF5LO8b68lo/view?usp=drive_link): Exported
-    pre-trained multi-modal YOLOX model that runs (model forward pass + post-processing) without NMS.
+      pre-trained multi-modal YOLOX model that runs (model forward pass + post-processing) without NMS.
    3. [yolox_raw.onnx](https://drive.google.com/file/d/1gbb-x2Qq_1KbPMGDVr9gvAw-iyUf4Oso/view?usp=drive_link): Exported
-    pre-trained multi-modal YOLOX model that runs only the model forward pass without post-processing and NMS.
+      pre-trained multi-modal YOLOX model that runs only the model forward pass without post-processing and NMS.
+   4. [end2end_rgb.onnx](https://drive.google.com/file/d/137hKSxrVjGmK0cj6_d9pzbjbTIApK8yV/view?usp=drive_link): Exported
+      pre-trained single-modal YOLOX model that runs end-to-end (model forward pass + post-processing + NMS) on rgb images.
+   5. [yolox_raw_rgb.onnx](https://drive.google.com/file/d/14yeByJtDz4XFO_px8xVFY4Tl4F0y2YIW/view?usp=drive_link): Exported
+      pre-trained single-modal YOLOX model that runs only the model forward pass without post-processing and NMS on rgb images.
+      
+      Download the model file and place it in the root directory of this repo.
    
    __Note__: opencv currently only can load `yolox_raw.onnx` model cause the exported op set version limitation.
 
