@@ -23,16 +23,22 @@ Specifically, we provide scripts to load the YOLOX model from the onnx file and 
 2. Run the test script:
    ```bash
    # run yolox_raw.onnx model on opencv
-   python on_cv.py <path_to_onnx_model> data/rgb_00000.png data/siap_00000.png --show
+   python on_cv.py <path_to_onnx_model> data/rgb_00000.png data/disp_00000.png --show
    
    # run end2end.onnx model on onnxruntime
-   python on_ort_end2end.py <path_to_onnx_model> data/rgb_00000.png data/siap_00000.png --show
+   python on_ort_end2end.py <path_to_onnx_model> data/rgb_00000.png data/disp_00000.png --show
+
+   # run end2end_rgb.onnx model on onnxruntime
+   python on_ort_end2end_rgb.py <path_to_onnx_model> data/rgb_00000.png --show
    
    # run yolox.onnx model on onnxruntime
-   python on_ort_nms.py <path_to_onnx_model> data/rgb_00000.png data/siap_00000.png --showy
+   python on_ort_nms.py <path_to_onnx_model> data/rgb_00000.png data/disp_00000.png --show
    
    # run yolox_raw.onnx model on onnxruntime
-   python on_ort_raw.py <path_to_onnx_model> data/rgb_00000.png data/siap_00000.png --show 
+   python on_ort_raw.py <path_to_onnx_model> data/rgb_00000.png data/disp_00000.png --show 
+
+   # run yolox_raw_rgb.onnx model on onnxruntime
+   python on_ort_raw_rgb.py <path_to_onnx_model> data/rgb_00000.png --show
    ``` 
    
 ### Results:
