@@ -19,7 +19,9 @@ Specifically, we provide scripts to load the YOLOX model from the onnx file and 
       pre-trained multi-modal YOLOX model that runs only the model forward pass without post-processing and NMS.
    4. [end2end_rgb.onnx](https://drive.google.com/file/d/137hKSxrVjGmK0cj6_d9pzbjbTIApK8yV/view?usp=drive_link): Exported
       pre-trained single-modal YOLOX model that runs end-to-end (model forward pass + post-processing + NMS) on rgb images.
-   5. [yolox_raw_rgb.onnx](https://drive.google.com/file/d/14yeByJtDz4XFO_px8xVFY4Tl4F0y2YIW/view?usp=drive_link): Exported
+   5. [yolox_rgb.onnx](https://drive.google.com/file/d/1Xvf5kEvIskjSytVrAIgSu1ah-llOWImy/view?usp=drive_link): Exported
+      pre-trained single-modal YOLOX model that runs (model forward pass + post-processing) without NMS on rgb images.
+   6. [yolox_raw_rgb.onnx](https://drive.google.com/file/d/14yeByJtDz4XFO_px8xVFY4Tl4F0y2YIW/view?usp=drive_link): Exported
       pre-trained single-modal YOLOX model that runs only the model forward pass without post-processing and NMS on rgb images.
       
       Download the model file and place it in the root directory of this repo.
@@ -39,6 +41,9 @@ Specifically, we provide scripts to load the YOLOX model from the onnx file and 
    
    # run yolox.onnx model on onnxruntime
    python on_ort_nms.py <path_to_onnx_model> data/rgb_00000.png data/disp_00000.png --show
+
+   # run yolox_rgb.onnx model on onnxruntime
+   python on_ort_nms_rgb.py <path_to_onnx_model> data/rgb_00000.png --show
    
    # run yolox_raw.onnx model on onnxruntime
    python on_ort_raw.py <path_to_onnx_model> data/rgb_00000.png data/disp_00000.png --show 
