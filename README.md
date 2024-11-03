@@ -1,4 +1,5 @@
 ## YOLOX Deploy Test - multi-modal inputs
+### This is part of the project [StereoTracking](https://github.com/Superjie13/StereoTracking) which aims to develop a lightweight and efficient stereo vision-based airborne object tracking system.
 
 This repo is used to test the deployment of YOLOX model on onnxruntime and opencv with multi-modal inputs (rgb, depth).
 Specifically, we provide scripts to load the YOLOX model from the onnx file and run inference on images.
@@ -8,6 +9,9 @@ Specifically, we provide scripts to load the YOLOX model from the onnx file and 
 - opencv==5.0.0
 - pillow==10.2.0
 - numpy==1.24.4
+
+### ONNX Model Export:
+If you want to export the rgb-depth YOLOX (we named it as yolox also in this repo) model to onnx, you can refer to [readme](docker/README.md) in the `docker` directory.
 
 ### Usage:
 1. Download the onnx model file:
@@ -56,3 +60,9 @@ Specifically, we provide scripts to load the YOLOX model from the onnx file and 
 <p align="center">
     <img src="data/result.png" width="90%">
 </p>
+
+### Citation:
+If you find this repo useful, please consider citing:
+```
+Coming soon...
+```
